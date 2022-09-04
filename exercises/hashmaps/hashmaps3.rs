@@ -48,7 +48,7 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
         // “team name ↦ scores” or “team ↦ scores”,
         // instead of “team name ↦ team and scores”.
         //
-        // https://github.com/rust-lang/rustlings/issues/1074
+        // https://github.com/rust-lang/rustlings/issues/1183
 
         let team_1 = scores.entry(team_1_name.clone()).or_insert(Team {
             name: team_1_name.clone(),
